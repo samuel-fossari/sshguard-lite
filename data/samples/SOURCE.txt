@@ -1,0 +1,40 @@
+# Proveniência de data/samples/auth.log
+
+Arquivo de desenvolvimento da Fase 0: 296 linhas no formato syslog.
+
+## Parte 1 — recorte real do AIT-LDS (272 linhas)
+
+- Dataset: AIT Log Data Set V2.0 / V2.1 (mesmo conteúdo de logs)
+- Registro original V2.0: https://zenodo.org/records/5789064
+- Empacotamento V2.1 (zips `*_no-pcaps`, usados aqui): https://zenodo.org/records/19483937
+- Testbed: `russellmitchell` (`russellmitchell_no-pcaps.zip`)
+- Host: `intranet_server` → `gather/intranet_server/logs/auth.log`
+- Janela do arquivo: 23–25 jan 2022; inclui a janela de ataque rotulada (24 jan ~03:01–04:39)
+- Rótulos correspondentes (não versionados): `labels/intranet_server/logs/auth.log` no zip, copiados localmente em `~/Documentos/Datasets/AIT-LDS/labels/`
+- Ataque rotulado neste `auth.log`: escalação de privilégio (`su`/`sudo` após webshell), **não** força bruta SSH
+
+Cópia local do zip/arquivos extraídos (fora do Git):
+
+```text
+~/Documentos/Datasets/AIT-LDS/
+```
+
+## Parte 2 — trecho sintético de força bruta SSH (24 linhas)
+
+O AIT-LDS v2.0 **não contém** tentativas `Failed password` / `Invalid user` via `sshd`. Os logins SSH do testbed são por chave pública; o “password cracking” do dataset é John the Ripper offline (após `cat /etc/shadow`), e o registro Zenodo `13168643` citado em rascunhos da especificação é o AIT **Netflow** Data Set, não os `auth.log`.
+
+Para as fases de parsing e detecção terem um trecho conhecido no formato da seção 5 da especificação, foram intercaladas 24 linhas `sshd` em 24 jan 2022 ~03:10:
+
+- IP ofensor (documentação RFC 5737): `203.0.113.88`
+- IPv6 de documentação (RFC 3849): `2001:db8::88`
+- 5 usuários inválidos (`admin`, `ubuntu`, `test`, `oracle`, `guest`)
+- 12 falhas de senha contra `root` + 1 falha via IPv6
+- 1 `Accepted password` ao final da sequência (para o extra RD3, ainda não implementado)
+
+Essas 24 linhas **não** fazem parte do ground truth do AIT-LDS.
+
+## Como reproduzir
+
+1. Baixar `russellmitchell_no-pcaps.zip` de https://zenodo.org/records/19483937
+2. Extrair `gather/intranet_server/logs/auth.log`
+3. Intercalar o burst `sshd` descrito acima (ou usar o `auth.log` já versionado neste diretório)

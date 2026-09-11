@@ -1,0 +1,24 @@
+# Ambiente virtual
+.venv/
+venv/
+env/
+
+# Bytecode e caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Dataset completo (pesado — não versionar)
+data/raw/
+*.zip
+
+# Artefatos locais
+.DS_Store
+*.egg-info/
+dist/
+build/

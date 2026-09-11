@@ -1,0 +1,6 @@
+# sshguard-lite — MVP
+#
+# Nenhuma dependência externa. O projeto usa apenas a biblioteca padrão
+# do Python 3.10+ (re, datetime, argparse, collections, json, pathlib).
+# Este arquivo existe para deixar isso explícito e para que
+# `pip install -r requirements.txt` seja um no-op seguro na reprodução.
