@@ -1,0 +1,6 @@
+Jan 24 03:10:01 calibracao sshd[2001]: Failed password for root from 203.0.113.20 port 42001 ssh2
+Jan 24 03:10:03 calibracao sshd[2002]: Failed password for root from 203.0.113.20 port 42002 ssh2
+Jan 24 03:10:05 calibracao sshd[2003]: Failed password for root from 203.0.113.20 port 42003 ssh2
+Jan 24 03:10:07 calibracao sshd[2004]: Failed password for root from 203.0.113.20 port 42004 ssh2
+Jan 24 03:10:20 calibracao sshd[2101]: Invalid user admin from 203.0.113.21 port 42101
+Jan 24 03:10:22 calibracao sshd[2102]: Invalid user guest from 203.0.113.21 port 42102

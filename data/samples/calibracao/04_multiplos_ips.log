@@ -1,0 +1,10 @@
+Jan 24 03:10:01 calibracao sshd[4001]: Failed password for root from 203.0.113.30 port 43001 ssh2
+Jan 24 03:10:01 calibracao sshd[4101]: Failed password for admin from 203.0.113.40 port 44001 ssh2
+Jan 24 03:10:03 calibracao sshd[4002]: Failed password for root from 203.0.113.30 port 43002 ssh2
+Jan 24 03:10:03 calibracao sshd[4102]: Failed password for admin from 203.0.113.40 port 44002 ssh2
+Jan 24 03:10:05 calibracao sshd[4003]: Failed password for root from 203.0.113.30 port 43003 ssh2
+Jan 24 03:10:05 calibracao sshd[4103]: Failed password for admin from 203.0.113.40 port 44003 ssh2
+Jan 24 03:10:07 calibracao sshd[4004]: Failed password for root from 203.0.113.30 port 43004 ssh2
+Jan 24 03:10:07 calibracao sshd[4104]: Failed password for admin from 203.0.113.40 port 44004 ssh2
+Jan 24 03:10:09 calibracao sshd[4005]: Failed password for root from 203.0.113.30 port 43005 ssh2
+Jan 24 03:10:09 calibracao sshd[4105]: Failed password for admin from 203.0.113.40 port 44005 ssh2

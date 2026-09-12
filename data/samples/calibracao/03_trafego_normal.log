@@ -1,0 +1,7 @@
+Jan 24 08:00:01 calibracao CRON[3001]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jan 24 08:00:01 calibracao CRON[3001]: pam_unix(cron:session): session closed for user root
+Jan 24 08:15:10 calibracao sshd[3010]: Accepted publickey for jhall from 172.19.131.174 port 38526 ssh2: RSA SHA256:aaaaaaaa
+Jan 24 08:15:10 calibracao sshd[3010]: pam_unix(sshd:session): session opened for user jhall by (uid=0)
+Jan 24 09:40:22 calibracao sshd[3020]: Accepted password for alice from 198.51.100.10 port 51000 ssh2
+Jan 24 11:02:03 calibracao sshd[3030]: Accepted password for bob from 198.51.100.11 port 51001 ssh2
+Jan 24 14:18:44 calibracao sshd[3040]: Received disconnect from 198.51.100.10 port 51000:11: disconnected by user

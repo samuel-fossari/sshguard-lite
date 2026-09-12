@@ -1,0 +1,8 @@
+Jan 24 03:10:01 calibracao sshd[1001]: Failed password for root from 203.0.113.10 port 41001 ssh2
+Jan 24 03:10:03 calibracao sshd[1002]: Failed password for root from 203.0.113.10 port 41002 ssh2
+Jan 24 03:10:05 calibracao sshd[1003]: Failed password for root from 203.0.113.10 port 41003 ssh2
+Jan 24 03:10:07 calibracao sshd[1004]: Failed password for root from 203.0.113.10 port 41004 ssh2
+Jan 24 03:10:09 calibracao sshd[1005]: Failed password for root from 203.0.113.10 port 41005 ssh2
+Jan 24 03:10:20 calibracao sshd[1101]: Invalid user admin from 203.0.113.11 port 41101
+Jan 24 03:10:22 calibracao sshd[1102]: Invalid user ubuntu from 203.0.113.11 port 41102
+Jan 24 03:10:24 calibracao sshd[1103]: Invalid user test from 203.0.113.11 port 41103
