@@ -33,6 +33,15 @@ Para as fases de parsing e detecção terem um trecho conhecido no formato da se
 
 Essas 24 linhas **não** fazem parte do ground truth do AIT-LDS.
 
+## Checagem extra (Fase 1) — outros testbeds
+
+Antes de implementar o parser, os `auth.log` correntes (sem logstash) de
+`harrison_no-pcaps.zip` e `wheeler_no-pcaps.zip` foram listados e lidos via
+HTTP Range. Em todos os hosts (`intranet_server`, `vpn`, `webserver`,
+`mail`, shares, DNS, firewall, caixas de correio de usuários) o resultado
+foi o mesmo: **zero** linhas `sshd` com `Failed password` ou `Invalid user`.
+O recorte híbrido descrito acima permanece a base de desenvolvimento.
+
 ## Como reproduzir
 
 1. Baixar `russellmitchell_no-pcaps.zip` de https://zenodo.org/records/19483937

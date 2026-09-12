@@ -23,8 +23,10 @@ Para reproduzir o recorte usado neste projeto, baixe
 `russellmitchell_no-pcaps.zip` (testbed russellmitchell, sem pcaps) e extraia
 o `auth.log` do host alvo documentado em `samples/SOURCE.txt`.
 
-Nota da Fase 0: o AIT-LDS v2.0 não registra força bruta SSH no `auth.log`
-(logins por chave; cracking offline com John the Ripper). O recorte em
-`samples/auth.log` combina o arquivo real do host `intranet_server` com um
-trecho sintético no formato `sshd` da especificação — detalhes em
-`samples/SOURCE.txt`.
+Nota: o AIT-LDS v2.0 não registra força bruta SSH no `auth.log` (logins por
+chave; cracking offline com John the Ripper). Além de `russellmitchell`,
+os `auth.log` correntes de `harrison` e `wheeler` foram conferidos (HTTP
+Range) e também não contêm `Failed password` / `Invalid user` via `sshd`.
+O recorte em `samples/auth.log` combina linhas reais do host
+`intranet_server` com um trecho sintético no formato da especificação —
+detalhes em `samples/SOURCE.txt`.
