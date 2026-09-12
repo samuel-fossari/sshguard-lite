@@ -2,7 +2,7 @@
 
 Ferramenta de linha de comando (CLI) em Python que analisa arquivos `auth.log` do Linux (formato syslog/`sshd`) e detecta tentativas de força bruta SSH, enumeração de usuários e indício de comprometimento após uma rajada de falhas.
 
-> Repositório público: *a preencher após a publicação no GitHub.*
+> Repositório público: https://github.com/samuel-fossari/sshguard-lite
 
 ---
 
